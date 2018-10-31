@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/burger_style.css" type="text/css" />
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class: "header">
+        <h1>Eat Da Burger</h1>
+    </div>
+    <div class="first-row">
+        <div class="first-col"></div>
+        <div class="second-col">
+            <img src="img/big-mac.jpg" alt="Smiley face" height="100" width="100">
+        </div>
+        <div class="third-col">
+        </div>
+    </div>
+
+    <div class="row-2">
+        <div class="row21"> </div>
+        <div class="row22">
+            <br>
+            <input type="text" id="inputtext" placeholder="Enter Burger Name"></input>
+            <br>
+            <br>
+            <button id="submit">submit</button>
+        </div>
+        <div class="row23">
+        </div>
+    </div>
+
+    <script src="/js/getrequest.js" type="text/javascript"></script>
+    <script src="/js/postrequest.js" type="text/javascript"></script>
+
+
+    <script>
+    // i=0;
+    // $('body').on('click', '#submit', function(event){
+    //     event.preventDefault()
+
+    //     // console.log("computer");
+    //     var ndiv = $('<div/>',{class:'ndiv', id:'newdiv'+i});
+    //     i++;
+
+    //     var newitem = $('#inputtext').val();
+
+    //     var p = $('<p>',{text:newitem});
+    //     var newid = Date.now();
+
+    //     var mdevour = $('<button/>',{text:'Devour it', class:'devour',id:newid, value:newid+"_"+newitem});
+
+    //     $(ndiv).append(p,mdevour);
+    //      $('.row21').append(ndiv);
+
+    //     $.ajax({
+    //         method: "POST",
+    //         dataType: "json",
+    //         url: "/api/burgers",
+
+    //          headers: {
+    //             "Accept": "application/json",
+    //             "Content-Type": "application/json"
+    //         },
+
+    //         data: JSON.stringify({
+    //             item_name: newitem,
+    //             item_id: newid
+    //         })
+    // });
+    // });
+
+    // code for get post request
+
+//     $('body').on('click','.devour', function(event){
+//         event.preventDefault();
+//         var str = $(this).val();
+//         var arr = str.split('_');
+//         var item_id = arr[0];
+//         var itemtext = arr[1];
+
+//         $.ajax({
+//             method:'PUT',
+//             datatype: 'json',
+//             url:`/api/burgers/${item_id}`,
+//             data: {
+//                 devoured : "1"
+//             }
+//         });
+
+//         var rdiv = $('<div>',{id:'rdiv'}).css({'background-color':'white'});
+//             rdiv.append(itemtext.trim());
+
+//         $('.row23').append(rdiv);
+//         $(this).parent().remove();
+
+// });
+    </script>
+
+
+</body>
+
+</html>
